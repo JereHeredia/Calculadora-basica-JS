@@ -1,3 +1,4 @@
+
 //Esto agrega a la pantalla el valor del boton de la calculadora que toquemos
 function addcheck(valor) {
 
