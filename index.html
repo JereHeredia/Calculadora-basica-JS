@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculadora basica</h1>
+    <h2>Por Jeremias Heredia</h2>
+    <div class="calculadora">
+
+        <input type="text" id="pantallaParaMemoria"  placeholder="Datos guardados en la memoria">
+
+
+        <input type="text" id="pantalla" readonly >
+
+
+        <div class="fila0">
+
+            <input onclick="borrar()" type="button" value="C" class="buttonC" title="Calcular">
+            <input onclick="memoria()" type="button" value="M" title="Guardar dato en memoria">
+            <input onclick="usarDatomemoria()" type="button" value="UM" title="Usar dato guardado en memoria">
+            <input onclick="addcheck('*')" type="button" value="x">
+        </div>
+
+        <div class="fila1">
+            <input  onclick="addcheck('7')" type="button" value="7">
+            <input onclick="addcheck('8')" type="button" value="8">
+            <input onclick="addcheck('9')" type="button" value="9">
+            <input onclick="addcheck('/')" type="button" value="÷">
+        </div>
+
+        <div class="fila2">
+            <input onclick="addcheck('4')" type="button" value="4">
+            <input onclick="addcheck('5')" type="button" value="5">
+            <input onclick="addcheck('6')" type="button" value="6">
+            <input onclick="addcheck('-')" type="button" value="-">
+        </div>
+
+        <div class="fila3">
+            <input onclick="addcheck('1')" type="button" value="1">
+            <input onclick="addcheck('2')" type="button" value="2">
+            <input onclick="addcheck('3')" type="button" value="3">
+            <input onclick="addcheck('+')" type="button" value="+">
+        </div>
+        <div class="fila4">
+            <input onclick="addcheck('0')" type="button" value="0" class="buttonCero">
+            <input onclick="addcheck('.')" type="button" value=".">
+            <input onclick="calcular()" type="button" value="=">
+                      
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
